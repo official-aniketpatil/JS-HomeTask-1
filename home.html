@@ -1,0 +1,80 @@
+<html>
+ <head>
+     <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+     <header>
+       <span class="heading">RD PORTAL</span>
+       <nav>
+           <ul>
+            <li>REPORTS</li>
+            <li>ADMIN</li>
+            <li>HELP</li>
+            <li class="user-text">Welcome to Aniket</li>
+            <li></li>
+          </ul>
+          <div class="user-image">
+          <img src="images/user.svg" height="70%" width="30%";>
+          </div>
+       </nav>
+     </header>
+     
+     <main> 
+        <div class="sub-heading">
+            <span>User Creation</span>
+            <hr>
+        </div>
+        <form novalidate>
+            <div class="wrapper">    
+                <div class="col-1">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" class="email-input-box">
+                        <br>
+                        <span class="emailError" aria-live="polite"></span>
+                        <br>
+                        <label for="lastName">LastName</label><br>
+                        <input id="lastName" class="lastname-input-box">
+                        <br>
+                        <span class="lastNameError" aria-live="polite"></span>
+                        <br>
+                        <button type="submit" class="create-button">Create</button>
+                        <br>
+                        <a href="#">Back to list</a>
+                </div>
+                <div class="col-2">
+                    <label for="role-select">RoleId</label><br>
+                    <select id="role-select" form="" required>
+                        <option value="">select a Role</option> 
+                    </select>
+                    <br>
+                    <span class="roleIdError" aria-live="polite"></span>
+                    <br>
+                    <label for="gender-select">GenderId</label><br>
+                    <select id="gender-select" form="">
+                        <option value="male">Select a Gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>     
+                    </select>
+                    <br>
+                    <span class="genderIdError" aria-live="polite"></span>
+                </div>
+                <div class="col-3">
+                        <label for="firstName">FirstName:</label><br>
+                        <input id="firstName" class="firstname-input-box">
+                        <br>
+                        <span class="firstNameError" aria-live="polite"></span>
+                        <br>
+                        <label for="contactNumber">ContactNumber:</label><br>
+                        <input id="contactNumber" class="contactnumber-input-box"><br>
+                        <span class="contactNumberError" aria-live="polite"></span>
+                </div>
+            </div>
+        </form>
+     </main>
+     <footer>
+       <span class="foot-label">RD-Pre Education version:7.1.026, Node2</span>
+       <span class="foot-option">Help</span>
+     </footer>
+     <script src="validation.js"></script>
+ </body>   
+</html>
