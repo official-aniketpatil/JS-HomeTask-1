@@ -33,7 +33,7 @@
                         <span class="emailError" aria-live="polite"></span>
                         <br>
                         <label for="lastName">LastName</label><br>
-                        <input id="lastName" class="lastname-input-box">
+                        <input  type="text" id="lastName" class="lastname-input-box">
                         <br>
                         <span class="lastNameError" aria-live="polite"></span>
                         <br>
@@ -42,30 +42,32 @@
                         <a href="#">Back to list</a>
                 </div>
                 <div class="col-2">
-                    <label for="role-select">RoleId</label><br>
-                    <select id="role-select" form="" required>
-                        <option value="">select a Role</option> 
+                    <label for="roleSelect">RoleId</label><br>
+                    <select id="roleSelect">
+                        <option value="">select a Role</option>
+                        <option value="admin">Admin</option>  
                     </select>
                     <br>
                     <span class="roleIdError" aria-live="polite"></span>
                     <br>
-                    <label for="gender-select">GenderId</label><br>
-                    <select id="gender-select" form="">
-                        <option value="male">Select a Gender</option>
-                        <option value="male">male</option>
-                        <option value="female">female</option>     
+                    <label for="genderSelect">GenderId</label><br>
+                    <select id="genderSelect">
+                        <option value="">Select a Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
                     </select>
                     <br>
                     <span class="genderIdError" aria-live="polite"></span>
                 </div>
                 <div class="col-3">
                         <label for="firstName">FirstName:</label><br>
-                        <input id="firstName" class="firstname-input-box">
+                        <input type="text" id="firstName" class="firstname-input-box">
                         <br>
                         <span class="firstNameError" aria-live="polite"></span>
                         <br>
                         <label for="contactNumber">ContactNumber:</label><br>
-                        <input id="contactNumber" class="contactnumber-input-box"><br>
+                        <input type="number" id="contactNumber" class="contactnumber-input-box"><br>
                         <span class="contactNumberError" aria-live="polite"></span>
                 </div>
             </div>
