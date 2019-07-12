@@ -100,18 +100,19 @@ header > nav > ul > li{
     opacity: 0.5;
     padding-left: 100px;
 }
-.emailError .firstNameError .lastNameError .roleIdError .genderIdError .contactNumberError{
+.emailError, .firstNameError, .lastNameError, .roleIdError, .genderIdError, .contactNumberError{
     width  : 100%;
-    padding: 0;
-   
+    text-align: center;
     font-size: 80%;
     color: white;
-    background-color: #900;
-    border-radius: 0 0 5px 5px;
+    border-radius: 9px;
+    background-color: burlywood;
    
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .emailError.active{
-    padding: 0.3em;
+  .emailError.active, .firstNameError.active,.lastNameError.active,.roleIdError.active,.genderIdError.active,.contactNumberError.active{
+    padding: 1px 10px;
+    margin-bottom: 5px;
+    display: block;
   }
